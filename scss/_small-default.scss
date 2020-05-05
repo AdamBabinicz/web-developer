@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+
+  body {
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    min-height: calc(100vh -20px);
+    margin: 0;
+    font-family: "Roboto Mono", monospace, Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; // Headings
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-family: $fontFamily;
+      &.lg-heading {
+        font-size: $fontSize;
+      }
+
+      &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+      }
+    }
+
+    a {
+      color: $btnLightColor;
+      text-decoration: none;
+    }
+
+    header {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .text-secondary {
+      color: $secondary-color;
+    }
+
+    main {
+      padding: 4rem; // height: 100%;
+      min-height: calc(100vh - 60px);
+      position: relative;
+      .icons {
+        margin-top: 1rem;
+        font-size: $fontSize;
+        .hidd {
+          display: none;
+        }
+        .icon-facebook-squared:before {
+          content: "\f308";
+        }
+        .icon-google:before {
+          content: "\f1a0";
+        }
+        .icon-twitter-squared:before {
+          content: "\f304";
+        }
+        .icon-github-squared:before {
+          content: "\f300";
+        }
+
+        a {
+          padding: 0.4rem;
+          @include easeOut();
+
+          &:hover {
+            color: $secondary-color;
+            @include easeOut();
+          }
+        }
+      }
+
+      &#home {
+        overflow: hidden;
+        h1 {
+          margin-top: 20vh;
+        }
+      }
+    }
+    /* siatka grid na stronę */
+    #grid {
+      display: grid;
+      position: absolute;
+      top: 0;
+      left: 0;
+      grid-template-columns: repeat(12, 1fr);
+      minmax: (100%, auto-repeat);
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      padding: 0;
+      z-index: -1;
+
+      p {
+        border: 0.01rem solid;
+        background: #000;
+        margin: 0;
+        opacity: 0.1;
+      }
+    }
+    .about-info {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+      grid-template-columns: repeat(3, 1fr);
+
+      .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border: $secondary-color 3px solid;
+      }
+
+      .bio {
+        grid-area: bio;
+        font-size: 1.3rem;
+        p {
+          text-align: left;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+        }
+      }
+
+      .job-1 {
+        grid-area: job1;
+        p {
+          display: flex;
+          justify-content: center;
+          font-family: $fontFamily;
+          color: $secondary-color;
+          font-size: $fontSize / 2.7;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .job-2 {
+        grid-area: job2;
+      }
+
+      .job-3 {
+        grid-area: job3;
+      }
+
+      .job {
+        background: lighten($primary-color, 5);
+        padding: 2rem;
+        border-bottom: $secondary-color 5px solid;
+        text-align: center;
+        h3 {
+          font-size: $fontSize / 2.5;
+        }
+        h4 {
+          margin-bottom: 0.8rem;
+        }
+        p {
+          margin: 0 1rem 0;
+          text-align: left;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+        }
+      }
+
+      .job > h3 {
+        color: $secondary-color;
+      }
+    } // Work/Projects
+    .projects {
+      display: grid;
+      grid-gap: 0.7rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      .icon-eye:before {
+        content: "\e800";
+      }
+      .icon-github-squared:before {
+        content: "\f300";
+      }
+
+      img {
+        @include easeOut;
+        width: 100%;
+        border: 3px $btnLightColor solid;
+
+        &:hover {
+          opacity: 0.5;
+          border-color: $secondary-color;
+          @include easeOut;
+        }
+      }
+    } // Contact Page
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 1rem;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 600;
+      .icon-mail-alt:before {
+        content: "\f0e0";
+      }
+      .icon-phone-squared:before {
+        content: "\f098";
+      }
+      .icon-warehouse:before {
+        content: "\e840";
+      }
+
+      div {
+        font-size: 2rem;
+        border: 3px $btnLightColor solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+        border-radius: 1rem;
+        &:hover {
+          padding: 0.5rem 1.5rem;
+          background: $secondary-color;
+          color: set-text-color($secondary-color);
+          &:hover:nth-child(3) {
+            color: $btnLightColor;
+            background: #ff0000;
+          }
+          span {
+            color: set-text-color($secondary-color);
+          }
+          i {
+            color: $btnLightColor;
+          }
+        }
+      }
+    } // Button Styles
+    .btn {
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 0;
+      margin-bottom: 0.3rem;
+      &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        @include easeOut();
+      }
+    }
+
+    .btn-dark {
+      display: none;
+      @extend .btn;
+      background: darken($primary-color, 50);
+      color: $btnLightColor;
+      @include easeOut();
+    }
+
+    .btn-light {
+      @extend .btn;
+      background: lighten($primary-color, 50);
+      color: $btnDarkColor;
+      @include easeOut();
+    }
+
+    #main-footer {
+      text-align: center;
+      padding: 1rem;
+      background: darken($primary-color, 10);
+      color: set-text-color($primary-color);
+      height: 60px;
+    }
+
+    @import "mobile";
+  }
+}

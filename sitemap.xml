@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--<guid value="8ed95459-854d-4283-9c16-b1216216dce8" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<url>
+<loc>https://web-developer.netlify.com/</loc>
+</url>
+<url>
+<loc>https://web-developer.netlify.com/work.html</loc>
+</url>
+<url>
+<loc>https://web-developer.netlify.com/about.html</loc>
+</url>
+<url>
+<loc>https://web-developer.netlify.com/index.html</loc>
+</url>
+<url>
+<loc>https://web-developer.netlify.com/contact.html</loc>
+</url>
+</urlset>

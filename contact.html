@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="DESCRIPTION"
+      content="Tworzenie nieszablonowych, responsywnych stron internetowych pod kątem SEO. ☎ +48733702632"
+    />
+    <meta
+      name="Projektowanie witryn, które spełniają założenia komercyjne, informacyjne, promocyjne oraz wizerunkowe."
+      content="index, follow"
+    />
+    <meta name="handheldFriendly" content="true" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://twitter.com/AdamBabinicz" />
+    <meta
+      name="twitter:title"
+      content="Prowadzenie działań marketingowych i promocyjnych w sieci."
+    />
+    <meta name="twitter:description" content=". ☎ +48733702632" />
+    <meta
+      name="twitter:image"
+      content="https://web-developer.netlify.com/img/projects/project2.jpg"
+    />
+    <meta name="twitter:image:alt" content="Twórca stron internetowych" />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Projektowanie witryn internetowych" />
+    <meta property="og:url" content="https://web-developer.netlify.com" />
+    <meta
+      property="og:image"
+      content="https://web-developer.netlify.com/img/portrait.png"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Strona internetowa wsparciem dla Twojego biznesu</title>
+    <style>
+      @font-face {
+        font-family: "fontello";
+        src: url("./font/fontello.eot?94223340");
+        src: url("./font/fontello.eot?94223340#iefix")
+            format("embedded-opentype"),
+          url("./font/fontello.woff2?94223340") format("woff2"),
+          url("./font/fontello.woff?94223340") format("woff"),
+          url("./font/fontello.ttf?94223340") format("truetype"),
+          url("./font/fontello.svg?94223340#fontello") format("svg");
+      }
+
+      [class^="icon-"]:before,
+      [class*=" icon-"]:before {
+        font-family: "fontello";
+      }
+      @font-face {
+        font-family: "Roboto Mono";
+        font-style: normal;
+        font-weight: 400;
+        src: url("./font/RobotoMono-Regular.woff");
+      }
+
+      @font-face {
+        font-family: "uni 05_53";
+        font-style: normal;
+        font-weight: 400;
+        src: url("./font/uni0553-webfont.woff");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Start
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              O mnie
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">
+              Moje projekty
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="contact.html" class="nav-link">
+              Kontakt ze mną
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact">
+      <h1 class="lg-heading">
+        Kontakt
+        <span class="text-secondary">ze mną</span>
+      </h1>
+      <h2 class="sm-heading">
+        W ten sposób możesz się ze mną skontaktować ...
+      </h2>
+      <div class="boxes">
+        <div>
+          <span class="text-secondary"
+            ><i class="icon-mail-alt" aria-hidden="true" title="Napisz!"></i
+          ></span>
+          <a href="mailto:puaro@vp.pl" title="Napisz!"> puaro@vp.pl</a>
+        </div>
+        <div>
+          <span class="text-secondary"
+            ><i
+              class="icon-phone-squared"
+              aria-hidden="true"
+              title="Zadzwoń!"
+            ></i
+          ></span>
+          <a href="tel:+48733702632" title="Zamów stronę internetową!" rel="me"
+            >+48 733 702 632</a
+          >
+        </div>
+        <div>
+          <span class="text-secondary"
+            ><i class="icon-warehouse" aria-hidden="true"></i
+          ></span>
+          26-611 Radom, Praca Zdalna
+        </div>
+      </div>
+      <div id="grid">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Adam Gierczak 2018 - 2019
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(
+        ".nav-item, .lg-heading, .sm-heading, .text-secondary, i, footer",
+        {
+          reset: true,
+          delay: 300
+        }
+      );
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-137934768-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-137934768-1");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "url": "https://developer-na-swoim.blogspot.com"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Web Developer",
+        "url": "https://web-developer.netlify.com",
+        "sameAs": [
+          "https://www.facebook.com/adam.gierczak.334",
+          "https://twitter.com/AdamBabinicz",
+          "https://github.com/AdamBabinicz",
+          "https://www.youtube.com/channel/UCp0ZGFs3s-z_OrToIOICNSg"
+        ]
+      }
+    </script>
+  </body>
+</html>
