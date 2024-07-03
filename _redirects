@@ -1,4 +1,8 @@
-/Adam    https://pranie-dywanow.j.pl    301
+# Szczegółowe przekierowanie na nową domenę
+/    https://web-developer.netlify.app/    301
+
+# Przekierowanie dla innych ścieżek
 /api/*    https://jsonplaceholder.typicode.com/:splat    200
 /getword    /.netlify/functions/getword/getword.js    200
+
 
