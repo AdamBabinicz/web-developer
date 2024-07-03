@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!--<guid value="8ed95459-854d-4283-9c16-b1216216dce8" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://web-developer.netlify.com/</loc>
+  <loc>https://web-developer.netlify.app/</loc>
+  <lastmod>2024-07-03T17:24:45+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://web-developer.netlify.com/work.html</loc>
+  <loc>https://web-developer.netlify.app/about</loc>
+  <lastmod>2024-07-03T17:24:45+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://web-developer.netlify.com/about.html</loc>
+  <loc>https://web-developer.netlify.app/work</loc>
+  <lastmod>2024-07-03T17:24:45+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://web-developer.netlify.com/index.html</loc>
+  <loc>https://web-developer.netlify.app/contact</loc>
+  <lastmod>2024-07-03T17:24:45+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-<url>
-<loc>https://web-developer.netlify.com/contact.html</loc>
-</url>
+
+
 </urlset>
